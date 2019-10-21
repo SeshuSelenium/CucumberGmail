@@ -11,5 +11,5 @@ import cucumber.api.junit.Cucumber;
 		"com.cucumber.listener.ExtentCucumberFormatter:CucumberGmailReports/report.html",
 		"html:target/cucumber-reports" })
 public class Runner {
-
+		
 }
