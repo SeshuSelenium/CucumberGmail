@@ -32,9 +32,9 @@ Scenario Outline: im testing gmail login page
 Scenario Outline: im testing gmail login page	
 	
 	Given I lunch gmail URL in "chrome" browser
-	When I enter <username>username
+	When I enter "<username>" usernames
 	And I click on the username next button
-	And I enter user <password> password
+	And I enter user "<password>" passwords
 	And I click on the password next button
 	Then Validate page title
 	Then Verify compose button
@@ -43,7 +43,7 @@ Scenario Outline: im testing gmail login page
 	
 	Examples:      
 	|username |password |                		
-	|nagasesha999 | darling143 |
+	|9515599998 | darling143 |
 	|nagasesha9999 | darling143|
 	
 

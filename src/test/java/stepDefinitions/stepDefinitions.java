@@ -31,7 +31,7 @@ public class stepDefinitions {
 	@Given("^I lunch gmail URL in \"([^\"]*)\" browser$")
 	public void i_lunch_gmail_URL_in_browser(String browser) throws Throwable {
 	    if(browser.equalsIgnoreCase("chrome")) {
-	    	System.setProperty("webdriver.chrome.driver", "E:\\chromedriver.exe");
+	    	System.setProperty("webdriver.chrome.driver", "D:\\drivers\\chromedriver.exe");
 			driver = new ChromeDriver();
 	    }else if(browser.equalsIgnoreCase("Firefox")) {
 	    	System.setProperty("webdriver.gecko.driver", "E:\\geckodriver.exe");
@@ -57,12 +57,21 @@ public class stepDefinitions {
 //		driver.findElement(By.name("identifier")).sendKeys(arg1);
 //	}
 	
-	@When("^I enter nagasesha(\\d+)username$")
-	public void i_enter_nagasesha_username(String username) throws Throwable {
+//	@When("^I enter nagasesha(.*) usernames$")
+//	public void i_enter_nagasesha_username(String username) throws Throwable {
+//		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+//		driver.findElement(By.name("identifier")).clear();
+//		driver.findElement(By.name("identifier")).sendKeys(username);
+//	}
+	
+	@When("^I enter \"([^\"]*)\" usernames$")
+	public void i_enter_usernames(String username) throws Throwable {
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.findElement(By.name("identifier")).clear();
 		driver.findElement(By.name("identifier")).sendKeys(username);
 	}
+	
+	
 	
 
 //	@When("^I enter user name$")
@@ -87,13 +96,21 @@ public class stepDefinitions {
 //		driver.findElement(By.xpath("//input[@name='password']")).sendKeys(arg1);
 //	}
 	
-	@When("^I enter user darling(\\d+) password$")
-	public void i_enter_user_darling_password(String password) throws Throwable {
+	@When("^I enter user \"([^\"]*)\" passwords$")
+	public void i_enter_user_passwords(String password) throws Throwable {
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.findElement(By.xpath("//input[@name='password']")).clear();
 		driver.findElement(By.xpath("//input[@name='password']")).sendKeys(password);
 	
 	}
+	
+//	@When("^I enter user darling(.*) passwords$")
+//	public void i_enter_user_darling_password(String password) throws Throwable {
+//		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+//		driver.findElement(By.xpath("//input[@name='password']")).clear();
+//		driver.findElement(By.xpath("//input[@name='password']")).sendKeys(password);
+//	
+//	}
 	
 	
 	
@@ -157,7 +174,7 @@ public class stepDefinitions {
 	@Then("^I Attach resume$")
 	public void i_Attach_resume() throws Throwable {
 		System.out.println("attach");
-
+		
 	}
 
 	@Then("^I click on send button$")

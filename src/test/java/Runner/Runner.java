@@ -3,7 +3,6 @@ package Runner;
 import org.junit.runner.RunWith;
 
 import cucumber.api.CucumberOptions;
-import cucumber.api.java.lv.Tad;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)

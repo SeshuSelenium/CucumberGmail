@@ -48,7 +48,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Oct 21, 2019 01:55:11 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Nov 20, 2019 11:14:34 PM</span>
 				</a>
 			</li>
 			<li>
@@ -75,7 +75,6 @@
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
 						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
-						<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -151,10 +150,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> scenario(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='50%'><span class='strong'>1</span> scenario(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>2</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='50%'>1</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -166,10 +165,10 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='42.857%'><span class='strong'>6</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='92.857%'><span class='strong'>13</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='14.286%'>2</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='42.857%'>6</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='7.143%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -186,18 +185,18 @@
 				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Gmail lon in</span>
-						<span class='test-time'>Oct 21, 2019 01:55:11 PM</span>
+						<span class='test-time'>Nov 20, 2019 11:14:34 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='scenariooutline node' test-id='2' status='fail'>
-	<span class='duration right label'>0h 1m 52s+751ms</span>
+	<span class='duration right label'>0h 2m 44s+149ms</span>
 	<div class='desc'>
 		<b>ScenarioOutline</b>
 		<span class="desc-text">im testing gmail login page</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='3' class='node scenario fail' status='fail'>
+		<li test-id='3' class='node scenario pass' status='pass'>
 			<div class='category-list'>
 				<span class='category label white-text'>@current</span>
 			</div>
@@ -212,53 +211,28 @@
 							<div class='pre'>passed</div>
 					</li>
 					<li test-id='5' class='node when pass' status='pass'><b>When</b>
-						<span class="bdd-step-name">When I enter nagasesha999username</span>
+						<span class="bdd-step-name">When I enter "9515599998" usernames</span>
 							<div class='pre'>passed</div>
 					</li>
 					<li test-id='6' class='node and pass' status='pass'><b>And</b>
 						<span class="bdd-step-name">And I click on the username next button</span>
 							<div class='pre'>passed</div>
 					</li>
-					<li test-id='7' class='node and fail' status='fail'><b>And</b>
-						<span class="bdd-step-name">And I enter user darling143 password</span>
-							<div class='pre'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='password']"}
-  (Session info: chrome=77.0.3865.120)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'DESKTOP-CG9G5TL', ip: '192.168.43.50', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\NAGASE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53891}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 04a5c874c0c70edb54f9b7effa88b5c5
-*** Element info: {Using=xpath, value=//input[@name='password']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at stepDefinitions.stepDefinitions.i_enter_user_darling_password(stepDefinitions.java:93)
-	at ✽.And I enter user darling143 password(GmailLogin.feature:37)
-</pre></div>
+					<li test-id='7' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I enter user "darling143" passwords</span>
+							<div class='pre'>passed</div>
 					</li>
-					<li test-id='8' class='node and skip' status='skip'><b>And</b>
+					<li test-id='8' class='node and pass' status='pass'><b>And</b>
 						<span class="bdd-step-name">And I click on the password next button</span>
-							<div class='pre'>skipped</div>
+							<div class='pre'>passed</div>
 					</li>
-					<li test-id='9' class='node then skip' status='skip'><b>Then</b>
+					<li test-id='9' class='node then pass' status='pass'><b>Then</b>
 						<span class="bdd-step-name">Then Validate page title</span>
-							<div class='pre'>skipped</div>
+							<div class='pre'>passed</div>
 					</li>
-					<li test-id='10' class='node then skip' status='skip'><b>Then</b>
+					<li test-id='10' class='node then pass' status='pass'><b>Then</b>
 						<span class="bdd-step-name">Then Verify compose button</span>
-							<div class='pre'>skipped</div>
+							<div class='pre'>passed</div>
 					</li>
 				</ul>
 		</li>
@@ -277,24 +251,36 @@ Session ID: 04a5c874c0c70edb54f9b7effa88b5c5
 							<div class='pre'>passed</div>
 					</li>
 					<li test-id='13' class='node when pass' status='pass'><b>When</b>
-						<span class="bdd-step-name">When I enter nagasesha9999username</span>
+						<span class="bdd-step-name">When I enter "nagasesha9999" usernames</span>
 							<div class='pre'>passed</div>
 					</li>
 					<li test-id='14' class='node and pass' status='pass'><b>And</b>
 						<span class="bdd-step-name">And I click on the username next button</span>
 							<div class='pre'>passed</div>
 					</li>
-					<li test-id='15' class='node and fail' status='fail'><b>And</b>
-						<span class="bdd-step-name">And I enter user darling143 password</span>
-							<div class='pre'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='password']"}
-  (Session info: chrome=77.0.3865.120)
+					<li test-id='15' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I enter user "darling143" passwords</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='16' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I click on the password next button</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='17' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then Validate page title</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='18' class='node then fail' status='fail'><b>Then</b>
+						<span class="bdd-step-name">Then Verify compose button</span>
+							<div class='pre'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[text()='Compose']"}
+  (Session info: chrome=78.0.3904.108)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'DESKTOP-CG9G5TL', ip: '192.168.43.50', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+System info: host: 'DESKTOP-IHTLCOE', ip: '192.168.99.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\NAGASE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53927}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: ad440d39e2558e55102ba4787bc82826
-*** Element info: {Using=xpath, value=//input[@name='password']}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\SUDHAR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63997}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f1ad5a2d6b24fc9b05c69f83f0534df7
+*** Element info: {Using=xpath, value=//*[text()='Compose']}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -309,21 +295,9 @@ Session ID: ad440d39e2558e55102ba4787bc82826
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at stepDefinitions.stepDefinitions.i_enter_user_darling_password(stepDefinitions.java:93)
-	at ✽.And I enter user darling143 password(GmailLogin.feature:37)
+	at stepDefinitions.stepDefinitions.verify_compose_button(stepDefinitions.java:140)
+	at ✽.Then Verify compose button(GmailLogin.feature:40)
 </pre></div>
-					</li>
-					<li test-id='16' class='node and skip' status='skip'><b>And</b>
-						<span class="bdd-step-name">And I click on the password next button</span>
-							<div class='pre'>skipped</div>
-					</li>
-					<li test-id='17' class='node then skip' status='skip'><b>Then</b>
-						<span class="bdd-step-name">Then Validate page title</span>
-							<div class='pre'>skipped</div>
-					</li>
-					<li test-id='18' class='node then skip' status='skip'><b>Then</b>
-						<span class="bdd-step-name">Then Verify compose button</span>
-							<div class='pre'>skipped</div>
 					</li>
 				</ul>
 		</li>
@@ -385,13 +359,14 @@ Session ID: ad440d39e2558e55102ba4787bc82826
 					<div class='category-heading'>
 						<span class='category-name'>@current</span>
 						<span class='category-status right'>
-							<span class='label fail'>2</span>
+							<span class='label pass'>1</span>
+							<span class='label fail'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							
-							<span class='label red lighten-1 white-text'>Failed: 2</span>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 					
@@ -406,12 +381,12 @@ Session ID: ad440d39e2558e55102ba4787bc82826
 								</thead>
 								<tbody>
 									<tr>
-										<td>Oct 21, 2019 01:55:11 PM</td>
+										<td>Nov 20, 2019 11:14:34 PM</td>
 										<td class='linked' test-id='3'>Gmail lon in.im testing gmail login page.im testing gmail login page</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Oct 21, 2019 01:56:19 PM</td>
+										<td>Nov 20, 2019 11:16:05 PM</td>
 										<td class='linked' test-id='11'>Gmail lon in.im testing gmail login page.im testing gmail login page</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
@@ -460,7 +435,7 @@ Session ID: ad440d39e2558e55102ba4787bc82826
                         <li class='exception displayed active'>
                             <div class='exception-heading'>
                                 <span class='exception-name'>org.openqa.selenium.NoSuchElementException</span>
-                                <span class='exception-count right'><span class='label red lighten-1 white-text'>2</span></span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
                             </div>
                             <div class='exception-content hide'>
                                 <div class='exception-tests'>
@@ -474,17 +449,17 @@ Session ID: ad440d39e2558e55102ba4787bc82826
                                         </thead>
                                         <tbody>
                                                     <tr>
-                                                        <td>Oct 21, 2019 01:55:58 PM</td>
-                                                        <td class='linked' test-id='7'>Gmail lon in.im testing gmail login page.im testing gmail login page.And I enter user darling143 password</td>
-                                                        <td><pre><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='password']"}
-  (Session info: chrome=77.0.3865.120)
+                                                        <td>Nov 20, 2019 11:16:58 PM</td>
+                                                        <td class='linked' test-id='18'>Gmail lon in.im testing gmail login page.im testing gmail login page.Then Verify compose button</td>
+                                                        <td><pre><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[text()='Compose']"}
+  (Session info: chrome=78.0.3904.108)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'DESKTOP-CG9G5TL', ip: '192.168.43.50', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+System info: host: 'DESKTOP-IHTLCOE', ip: '192.168.99.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\NAGASE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53891}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 04a5c874c0c70edb54f9b7effa88b5c5
-*** Element info: {Using=xpath, value=//input[@name='password']}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\SUDHAR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63997}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f1ad5a2d6b24fc9b05c69f83f0534df7
+*** Element info: {Using=xpath, value=//*[text()='Compose']}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -499,38 +474,8 @@ Session ID: 04a5c874c0c70edb54f9b7effa88b5c5
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at stepDefinitions.stepDefinitions.i_enter_user_darling_password(stepDefinitions.java:93)
-	at ✽.And I enter user darling143 password(GmailLogin.feature:37)
-</pre></pre></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Oct 21, 2019 01:56:44 PM</td>
-                                                        <td class='linked' test-id='15'>Gmail lon in.im testing gmail login page.im testing gmail login page.And I enter user darling143 password</td>
-                                                        <td><pre><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='password']"}
-  (Session info: chrome=77.0.3865.120)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'DESKTOP-CG9G5TL', ip: '192.168.43.50', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\NAGASE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53927}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: ad440d39e2558e55102ba4787bc82826
-*** Element info: {Using=xpath, value=//input[@name='password']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at stepDefinitions.stepDefinitions.i_enter_user_darling_password(stepDefinitions.java:93)
-	at ✽.And I enter user darling143 password(GmailLogin.feature:37)
+	at stepDefinitions.stepDefinitions.verify_compose_button(stepDefinitions.java:140)
+	at ✽.Then Verify compose button(GmailLogin.feature:40)
 </pre></pre></td>
                                                     </tr>
                                         </tbody>
@@ -575,19 +520,19 @@ Session ID: ad440d39e2558e55102ba4787bc82826
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Oct 21, 2019 01:55:11 PM</div>
+					<div class='panel-lead'>Nov 20, 2019 11:14:34 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Oct 21, 2019 01:57:04 PM</div>
+			 		<div class='panel-lead'>Nov 20, 2019 11:17:18 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 1m 53s+191ms</div>
+					<div class='panel-lead'>0h 2m 44s+277ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -604,11 +549,11 @@ Session ID: ad440d39e2558e55102ba4787bc82826
 						</tr>
 						<tr>
 							<td>@current</td>
-							<td>0</td>
-							<td>2</td>
+							<td>1</td>
+							<td>1</td>
 							<td>0</td>
 							<td>
-									0%
+									50%
 							</td>
 						</tr>
 					</table>
@@ -632,23 +577,23 @@ Session ID: ad440d39e2558e55102ba4787bc82826
 				skipParent: 0,
 				exceptionsParent: 1,
 				
-				passChild: 0,
-				failChild: 2,
+				passChild: 1,
+				failChild: 1,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 2,
+				exceptionsChild: 1,
 				
-				passGrandChild: 6,
-				failGrandChild: 2,
+				passGrandChild: 13,
+				failGrandChild: 1,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 6,
+				skipGrandChild: 0,
 				infoGrandChild: 0,
-				exceptionsGrandChild: 8,
+				exceptionsGrandChild: 1,
 			};
 		</script>
 		

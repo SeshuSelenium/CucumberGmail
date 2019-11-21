@@ -27,7 +27,7 @@ formatter.step({
 });
 formatter.step({
   "line": 35,
-  "name": "I enter \u003cusername\u003eusername",
+  "name": "I enter \"\u003cusername\u003e\" usernames",
   "keyword": "When "
 });
 formatter.step({
@@ -37,7 +37,7 @@ formatter.step({
 });
 formatter.step({
   "line": 37,
-  "name": "I enter user \u003cpassword\u003e password",
+  "name": "I enter user \"\u003cpassword\u003e\" passwords",
   "keyword": "And "
 });
 formatter.step({
@@ -71,7 +71,7 @@ formatter.examples({
     },
     {
       "cells": [
-        "nagasesha999",
+        "9515599998",
         "darling143"
       ],
       "line": 46,
@@ -109,7 +109,7 @@ formatter.step({
 });
 formatter.step({
   "line": 35,
-  "name": "I enter nagasesha999username",
+  "name": "I enter \"9515599998\" usernames",
   "matchedColumns": [
     0
   ],
@@ -122,7 +122,7 @@ formatter.step({
 });
 formatter.step({
   "line": 37,
-  "name": "I enter user darling143 password",
+  "name": "I enter user \"darling143\" passwords",
   "matchedColumns": [
     1
   ],
@@ -153,60 +153,62 @@ formatter.match({
   "location": "stepDefinitions.i_lunch_gmail_URL_in_browser(String)"
 });
 formatter.result({
-  "duration": 38257812878,
+  "duration": 19346996759,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "999",
-      "offset": 17
+      "val": "9515599998",
+      "offset": 9
     }
   ],
-  "location": "stepDefinitions.i_enter_nagasesha_username(String)"
+  "location": "stepDefinitions.i_enter_usernames(String)"
 });
 formatter.result({
-  "duration": 593037422,
+  "duration": 271938477,
   "status": "passed"
 });
 formatter.match({
   "location": "stepDefinitions.i_click_on_the_username_next_button()"
 });
 formatter.result({
-  "duration": 7337522374,
+  "duration": 5179389456,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "143",
-      "offset": 20
+      "val": "darling143",
+      "offset": 14
     }
   ],
-  "location": "stepDefinitions.i_enter_user_darling_password(String)"
+  "location": "stepDefinitions.i_enter_user_passwords(String)"
 });
 formatter.result({
-  "duration": 20362912106,
-  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@name\u003d\u0027password\u0027]\"}\n  (Session info: chrome\u003d77.0.3865.120)\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.14.0\u0027, revision: \u0027aacccce0\u0027, time: \u00272018-08-02T20:19:58.91Z\u0027\nSystem info: host: \u0027DESKTOP-CG9G5TL\u0027, ip: \u0027192.168.43.50\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_201\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\\Users\\NAGASE~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:53891}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 04a5c874c0c70edb54f9b7effa88b5c5\n*** Element info: {Using\u003dxpath, value\u003d//input[@name\u003d\u0027password\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)\r\n\tat stepDefinitions.stepDefinitions.i_enter_user_darling_password(stepDefinitions.java:93)\r\n\tat ✽.And I enter user darling143 password(GmailLogin.feature:37)\r\n",
-  "status": "failed"
+  "duration": 185784821,
+  "status": "passed"
 });
 formatter.match({
   "location": "stepDefinitions.i_click_on_the_password_next_button()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 173394540,
+  "status": "passed"
 });
 formatter.match({
   "location": "stepDefinitions.validate_page_title()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 7433757,
+  "status": "passed"
 });
 formatter.match({
   "location": "stepDefinitions.verify_compose_button()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 65605629422,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 47,
@@ -229,7 +231,7 @@ formatter.step({
 });
 formatter.step({
   "line": 35,
-  "name": "I enter nagasesha9999username",
+  "name": "I enter \"nagasesha9999\" usernames",
   "matchedColumns": [
     0
   ],
@@ -242,7 +244,7 @@ formatter.step({
 });
 formatter.step({
   "line": 37,
-  "name": "I enter user darling143 password",
+  "name": "I enter user \"darling143\" passwords",
   "matchedColumns": [
     1
   ],
@@ -273,59 +275,62 @@ formatter.match({
   "location": "stepDefinitions.i_lunch_gmail_URL_in_browser(String)"
 });
 formatter.result({
-  "duration": 18935831439,
+  "duration": 43523491055,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "9999",
-      "offset": 17
+      "val": "nagasesha9999",
+      "offset": 9
     }
   ],
-  "location": "stepDefinitions.i_enter_nagasesha_username(String)"
+  "location": "stepDefinitions.i_enter_usernames(String)"
 });
 formatter.result({
-  "duration": 260098884,
+  "duration": 331014258,
   "status": "passed"
 });
 formatter.match({
   "location": "stepDefinitions.i_click_on_the_username_next_button()"
 });
 formatter.result({
-  "duration": 5459470297,
+  "duration": 5181640505,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "143",
-      "offset": 20
+      "val": "darling143",
+      "offset": 14
     }
   ],
-  "location": "stepDefinitions.i_enter_user_darling_password(String)"
+  "location": "stepDefinitions.i_enter_user_passwords(String)"
 });
 formatter.result({
-  "duration": 20054378882,
-  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@name\u003d\u0027password\u0027]\"}\n  (Session info: chrome\u003d77.0.3865.120)\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.14.0\u0027, revision: \u0027aacccce0\u0027, time: \u00272018-08-02T20:19:58.91Z\u0027\nSystem info: host: \u0027DESKTOP-CG9G5TL\u0027, ip: \u0027192.168.43.50\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_201\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\\Users\\NAGASE~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:53927}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: ad440d39e2558e55102ba4787bc82826\n*** Element info: {Using\u003dxpath, value\u003d//input[@name\u003d\u0027password\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)\r\n\tat stepDefinitions.stepDefinitions.i_enter_user_darling_password(stepDefinitions.java:93)\r\n\tat ✽.And I enter user darling143 password(GmailLogin.feature:37)\r\n",
-  "status": "failed"
+  "duration": 3550259469,
+  "status": "passed"
 });
 formatter.match({
   "location": "stepDefinitions.i_click_on_the_password_next_button()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 298334203,
+  "status": "passed"
 });
 formatter.match({
   "location": "stepDefinitions.validate_page_title()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 3874436,
+  "status": "passed"
 });
 formatter.match({
   "location": "stepDefinitions.verify_compose_button()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 20178470839,
+  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[text()\u003d\u0027Compose\u0027]\"}\n  (Session info: chrome\u003d78.0.3904.108)\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.14.0\u0027, revision: \u0027aacccce0\u0027, time: \u00272018-08-02T20:19:58.91Z\u0027\nSystem info: host: \u0027DESKTOP-IHTLCOE\u0027, ip: \u0027192.168.99.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_221\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\\Users\\SUDHAR~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:63997}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: f1ad5a2d6b24fc9b05c69f83f0534df7\n*** Element info: {Using\u003dxpath, value\u003d//*[text()\u003d\u0027Compose\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)\r\n\tat stepDefinitions.stepDefinitions.verify_compose_button(stepDefinitions.java:140)\r\n\tat ✽.Then Verify compose button(GmailLogin.feature:40)\r\n",
+  "status": "failed"
 });
 });
